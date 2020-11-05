@@ -1,12 +1,23 @@
-
-public class Helloworld {
+public class Helloworld
+{
+public static void main(String[] args)
+{
+	//get the minimum and maximum values of the variables
+	System.out.println(Byte.MIN_VALUE);
+	System.out.println(Byte.MAX_VALUE+"\n");
 	
-	static String Read_value="print the static values";
-	static final double PInum=3.141529;
-	public static void main(String[] args) {
-		System.out.println(Read_value+"\n");
-		System.out.println("the value of the PI is: "+PInum);
-	}
- 
-	}
+	System.out.println(Short.MIN_VALUE);
+	System.out.println(Short.MAX_VALUE+"\n");
+	
+	System.out.println(Integer.MIN_VALUE);
+	System.out.println(Integer.MAX_VALUE+"\n");
+	
+	System.out.println(Long.MIN_VALUE);
+	System.out.println(Long.MAX_VALUE+"\n");
+	
+	System.out.println(Float.MIN_VALUE);
+	System.out.println(Double.MAX_VALUE);
+	
+ }
+}
 
