@@ -1,24 +1,36 @@
 import java.util.*;
 public class Helloworld{
 	public static void main(String[] args) {
-		//int boy=25;
-		//int girl=24;
-	Scanner cat= new Scanner(System.in);
-	System.out.println("Enter the boy age");
-		int boy=cat.nextInt();
-	System.out.println("Enter the girl age");
-		int girl=cat.nextInt();
 		
-		if(boy>=21) {
-			System.out.println("The boy is : "+boy+ " and eligible for marriage");
-			if(girl>=18) {
-				System.out.println("the girl is : "+girl+ " and eligible for marriage");
-			}else {
-				System.out.println("the girl is : "+girl+" and not eligible for marriage");
-			}
-		}else {
-				System.out.println("the boy is : "+boy+" and not eligible for marriage");
+		Scanner fruit= new Scanner(System.in);
+		System.out.println("Enter your age");
+		int age=fruit.nextInt();
+		
+		switch(age) {
+		case 3:
+			System.out.println("You are ready to go to preschool");
+			break;
+		case 5:
+			System.out.println("You are go to school");
+			break;
+		case 15:
+			System.out.println("You are complete you high school");
+			break;
+		case 17:
+			System.out.println("You are completed your 10+2 ");
+			break;
+		case 20:
+			System.out.println("You are a graduate holder");
+			break;
+		case 23:
+			System.out.println("You are a post graduate holder");
+			break;
+		case 25:
+			System.out.println("You are ready to get marriage");
+			break;
+		 default:
+			System.out.println("You entered incorrect age");
+			break;
 		}
-		cat.close();
 	}
 }
