@@ -1,16 +1,19 @@
 public class AnimalWorld
 {
-	private String girlName;
+private String foodName;
+
+public AnimalWorld(String food) {
+	foodName=food;
+}
+
+public void setName(String food) {
+	foodName=food;
+}
+public String getName() {
 	
-	public void setName(String name) {
-		girlName=name;
-	}
-	
-	public String getName() {
-		return girlName;
-	}
-	
-	public void saying() {
-		System.out.printf("My first girl friend name is %s",getName());
-	}
+	return foodName;
+}
+public void saying() {
+	System.out.printf("I love food %s",getName());
+}
 }
