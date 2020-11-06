@@ -4,6 +4,7 @@ public class Helloworld{
 		
 		Scanner fruit= new Scanner(System.in);
 		System.out.println("Enter your age");
+		
 		int age=fruit.nextInt();
 		
 		switch(age) {
