@@ -1,7 +1,16 @@
 public class AnimalWorld
 {
-	public void animal(String name)
-	{
-		System.out.println("hello"+name);
+	private String girlName;
+	
+	public void setName(String name) {
+		girlName=name;
+	}
+	
+	public String getName() {
+		return girlName;
+	}
+	
+	public void saying() {
+		System.out.printf("My first girl friend name is %s",getName());
 	}
 }

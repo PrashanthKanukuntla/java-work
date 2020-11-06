@@ -1,14 +1,18 @@
 import java.util.*;
-class Helloworld{
-	public static void main(String[] args)
+
+class Helloworld
+{
+	public static void main(String[] args) 
 	{
-		Scanner monkey= new Scanner(System.in);
-		String name= monkey.nextLine();
+		Scanner tiger= new Scanner(System.in);
 		
-		System.out.println("enter the name of animal");
+		System.out.println("Enter your first girl friend name :-");
 		
-		AnimalWorld am= new AnimalWorld();
-		am.animal(name);
+		AnimalWorld am;
+		am= new AnimalWorld();
+		String temp=tiger.nextLine();
 		
+		am.setName(temp);
+		am.saying();
 	}
 }
