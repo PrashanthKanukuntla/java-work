@@ -1,7 +1,7 @@
-public class AnimalWorld 
+public class AnimalWorld
 {
-	public void world()
+	public void animal(String name)
 	{
-		System.out.println("this is a computer programming world");
+		System.out.println("hello"+name);
 	}
 }
