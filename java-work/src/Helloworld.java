@@ -1,12 +1,20 @@
 import java.util.Scanner;
-public class Helloworld
-{
-public static void main(String[] args) 
-{
-	Scanner horse= new Scanner(System.in);
-	System.out.println("enter your age");
-	int age=horse.nextInt();
-	
-	System.out.println(age>=18?"you havae been eligible for apply voter Id" : "you will not eligible for apply voter Id");
-}	
+public class Helloworld{
+	public static void main(String[] args) {
+		Scanner sun= new Scanner(System.in);
+		
+		System.out.println("enter the grades");
+		
+		int count=0;
+		int grade;
+		int total=0;
+		int average;
+		while(count<10) {
+			grade =sun.nextInt();
+			total+=grade;
+			count++;
+		}
+		average= total/10;
+		System.out.println("the average is :-"+average);
+	}
 }
