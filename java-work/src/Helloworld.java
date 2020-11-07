@@ -2,13 +2,21 @@ public class Helloworld
 {
 public static void main(String[] args)
 {
-	System.out.println("Index\tvalues");
-
-	int shot[]= {8,9,43,56,70,99};
+	int a[]= {2,3,4,5,6};
 	
-	for(int i=0;i<shot.length;i++) 
+	change(a);
+	
+	for(int y:a)
 	{
-		System.out.println(i+"\t "+shot[i]);
+		System.out.println(y);
 	}
 }
+
+	public static void change(int x[])
+	{
+		for(int i=0; i<x.length; i++)
+		{
+			x[i]+=5;
+		}
+	}
 }
