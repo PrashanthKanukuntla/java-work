@@ -1,21 +1,14 @@
-import java.util.*;
 public class Helloworld
 {
 public static void main(String[] args)
 {
-	Scanner shark= new Scanner(System.in);
+	System.out.println("Index\tvalues");
+
+	int shot[]= {8,9,43,56,70,99};
 	
-	double amount;
-	
-	System.out.println("enter the price");
-	double price=shark.nextDouble();
-	
-	System.out.println("enter the rate");
-	double rate=shark.nextDouble();
-	
-	for(int day=1; day<=20; day++) {
-		amount=price*Math.pow(1+rate, day);
-		System.out.println(day+" "+amount);
+	for(int i=0;i<shot.length;i++) 
+	{
+		System.out.println(i+"\t "+shot[i]);
 	}
 }
 }
