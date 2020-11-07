@@ -2,21 +2,10 @@ public class Helloworld
 {
 public static void main(String[] args)
 {
-	int a[]= {2,3,4,5,6};
-	
-	change(a);
-	
-	for(int y:a)
+	int a[]= {1,2,3,4,5};
+	for(int x:a)
 	{
-		System.out.println(y);
+		System.out.println(x);
 	}
 }
-
-	public static void change(int x[])
-	{
-		for(int i=0; i<x.length; i++)
-		{
-			x[i]+=5;
-		}
-	}
 }
