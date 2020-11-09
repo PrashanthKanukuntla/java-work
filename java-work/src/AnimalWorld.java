@@ -1,19 +1,17 @@
-public class AnimalWorld
+class AnimalWorld
 {
-private String foodName;
-
-public AnimalWorld(String food) { //constructor
-	foodName=food;
-}
-
-public void setName(String food) {
-	foodName=food;
-}
-public String getName() {
+	private int day;
+	private int month;
+	private int year;
 	
-	return foodName;
-}
-public void saying() {
-	System.out.printf("I love food %s\n",getName());
-}
+	public AnimalWorld(int d, int m, int y) {
+		day=d;
+		month=m;
+		year=y;
+	System.out.printf("the constrctuor for this is %s\n", this);
+	}
+	
+	public String toString() {
+		return String.format("%d/ %d/ %d", day, month, year);
+	}
 }
